@@ -1,0 +1,218 @@
+/*STYLES GENERAUX*/
+*{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    text-align: justify;
+    box-sizing: border-box;
+}
+body{
+    background: #f0f3f5;
+    text-align: center;
+}
+p{
+    font-size: 1em;
+    line-height: 1.5em;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+/*HEADER & FOOTER*/
+header{
+    width: 100%;
+    padding: 20px 0px;
+    background:coral;
+    box-shadow: 0px 0px 15px #333;
+}
+header{
+    border-bottom: 2px solid #fff;
+    height: 120px;
+}
+header h1{
+    font-size: 1.5em;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.Nom{
+ color:darkslategray;
+}
+
+}
+footer a{
+    color: #fff;
+}
+
+/*SECTIONS*/
+section{
+    display: flex; 
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 20px;
+    margin: 50px auto;
+    box-shadow: 0px 0px 10px #bbb; 
+    background-color: #fff;
+}
+.obj{
+margin-left: auto;    
+}
+
+section h2{
+    margin: 10px 0;
+    width: 90%;
+    margin-left: 10% !important;
+    /* margin-left:  */
+}
+section > div{
+    width: 70%;
+}
+
+/*SECTION INFOS*/
+.photo{
+    text-align: center;
+}
+.photo img{
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+    margin-top: -80px;
+
+/*Border Objectif*/
+}
+.prez{
+    border-bottom: 3px groove #ccc;
+}
+.prez a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    margin: 10px auto 30px auto;
+    color: #fff;
+    background-color: #EA0;
+    box-shadow: 0px 0px 10px #ccc;
+    border-radius: 5px;
+}
+.contact-flex{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+.contact-flex p:first-child{
+    flex: 0 0 40%;
+}
+
+/*SECTION EXP ET FORMATION*/
+.exp{
+    display: flex;
+    flex-flow: row wrap;
+    border-bottom: 1px solid #bbb;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.exp-info{
+    display: flex;
+    flex-flow: column wrap;
+    margin-left: ;
+}
+.exp-logo{
+    flex: 0 0 25%;
+    max-width: 100px;
+}
+.exp-info{
+    flex: 0 0 70%;
+    margin-left: auto;
+}
+.exp img{
+    width: 100%;
+}
+.exp h3{
+    font-size:  1.2em;
+}
+.exp h4{
+    font-size:  1em;
+    font-weight: normal;
+}
+
+/*SECTION COMPETENCES*/
+.h3gauche{
+    width: 90%;
+}
+.comp{
+    display:flex;
+    flex-flow: row wrap;
+    margin-bottom: 10px;
+}
+.comp p{
+    flex: 0 0 40%;
+}
+.conteneur-barre{
+    flex: 0 0 60%;
+    border-radius: 5px;
+    background-color: lightcoral;
+    border-bottom: 1px ridge grey;
+}
+.barre{
+    display: block;
+    height: 100%;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+.c90{
+    width: 20%;
+    background-color:#ADD8E6;
+}
+.c30{
+    width: 30%;
+    background-color: #ADD8E6;
+}
+.c95{
+    width: 45%;
+    background-color:#ADD8E6;
+}
+.c100{
+    width: 70%;
+    background-color:#ADD8E6;
+    border-radius: 5px;
+}
+.comp2{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+.conteneur-barre2{
+    flex: 0 0 100%;
+    height: 0.5em;
+    margin-bottom: 0.25em;
+    border-radius: 5px;
+    background-color: grey;
+}
+
+/*SECTION INTERETS*/
+.interet{
+    flex: 0 1 50%;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.interet img{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px #555;
+}
+.h3EN{
+
+}
+
+.h3FR{
+
+}
+.conteneurlang{
+    flex: 0 0 60%;
+    border-radius: 5px;
+    background-color: lightcoral;
+    border-bottom: 1px ridge grey;
