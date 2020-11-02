@@ -1,4 +1,4 @@
-/*STYLES GENERAUX*/
+/* L'étoile désigne "all soit l'entiereté de la page  */
 *{
     font-family: 'Montserrat', sans-serif;
     padding: 0px;
@@ -31,18 +31,23 @@ header{
     height: 120px;
 }
 header h1{
-    font-size: 1.5em;
+    font-size: 3em;
     width: 90%;
     margin: 0 auto;
+    text-align: center;
 }
 
 .Nom{
  color:darkslategray;
 }
 
-}
-footer a{
-    color: #fff;
+
+.footer {
+    color: blue;
+    border-radius: 15px ;
+    border: goldenrod;
+    border-width: 10px;
+    border-style: initialss;
 }
 
 /*SECTIONS*/
@@ -52,19 +57,19 @@ section{
     justify-content: center;
     width: 100%;
     padding-bottom: 20px;
-    margin: 50px auto;
+    margin: 50px 25px auto;
     box-shadow: 0px 0px 10px #bbb; 
     background-color: #fff;
 }
-.obj{
-margin-left: auto;    
+h2.obj{
+    margin-left: 0% !important;
+  
 }
 
 section h2{
-    margin: 10px 0;
+    margin: 10px;
+    margin-left: 15%;
     width: 90%;
-    margin-left: 10% !important;
-    /* margin-left:  */
 }
 section > div{
     width: 70%;
@@ -85,6 +90,8 @@ section > div{
 .prez{
     border-bottom: 3px groove #ccc;
 }
+
+/*Styles pour div de présentations + infos contacts*/
 .prez a{
     display: block;
     text-align: center;
@@ -99,9 +106,23 @@ section > div{
     display: flex;
     flex-flow: row wrap;
     align-items: center;
+    
+    
 }
 .contact-flex p:first-child{
     flex: 0 0 40%;
+}
+
+/*margin left pour informations de contacts*/
+.contact h2{
+    margin-left: 0% !important;
+
+}
+
+/*Animations et styles des infos de contacts*/
+.contact-flex p :hover {
+color:gold ;
+
 }
 
 /*SECTION EXP ET FORMATION*/
@@ -115,7 +136,7 @@ section > div{
 .exp-info{
     display: flex;
     flex-flow: column wrap;
-    margin-left: ;
+   
 }
 .exp-logo{
     flex: 0 0 25%;
@@ -204,15 +225,12 @@ section > div{
     border-radius: 50%;
     box-shadow: 0px 0px 15px #555;
 }
-.h3EN{
 
-}
 
-.h3FR{
 
-}
 .conteneurlang{
     flex: 0 0 60%;
     border-radius: 5px;
     background-color: lightcoral;
     border-bottom: 1px ridge grey;
+}
