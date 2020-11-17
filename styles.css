@@ -1,14 +1,21 @@
 /* L'étoile désigne "all soit l'entiereté de la page  */
+
 *{
     font-family: 'Montserrat', sans-serif;
-    padding: 0px;
+    padding-right: 10px;
     margin: 0px;
     text-align: justify;
     box-sizing: border-box;
+    overflow-x: hidden; /* Cache la scrollbar  horizontale  */
+    
 }
 body{
     background: #f0f3f5;
     text-align: center;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    
 }
 p{
     font-size: 1em;
@@ -19,17 +26,44 @@ a{
     color: #000;
 }
 
+main {
+    flex: 1 0 auto;
+  }
 /*HEADER & FOOTER*/
 header{
     width: 100%;
     padding: 20px 0px;
     background:coral;
     box-shadow: 0px 0px 15px #333;
-}
-header{
     border-bottom: 2px solid #fff;
     height: 120px;
 }
+
+/*NAVBAR*/
+
+
+ul {
+    font-family: 'Montserrat' , sans-serif;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    
+  }
+  
+  li a {
+    display: block;
+    color: ;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color on hover */
+  li a:hover {
+    background-color: coral;
+    color: white;
+  }
+
 header h1{
     font-size: 3em;
     width: 90%;
@@ -41,14 +75,13 @@ header h1{
  color:darkslategray;
 }
 
-
-.footer {
-    color: blue;
-    border-radius: 15px ;
-    border: goldenrod;
-    border-width: 10px;
-    border-style: initialss;
+footer{
+    position: absolute !important;
+    bottom: 0;
+    height:50px;
+    width: 100%;
 }
+
 
 /*SECTIONS*/
 section{
@@ -70,6 +103,7 @@ section h2{
     margin: 10px;
     margin-left: 15%;
     width: 90%;
+    
 }
 section > div{
     width: 70%;
@@ -78,12 +112,13 @@ section > div{
 /*SECTION INFOS*/
 .photo{
     text-align: center;
+
 }
 .photo img{
     width: 150px;
     height: 150px;
     border-radius: 10%;
-    margin-top: -80px;
+    margin-top: 0px;
 
 /*Border Objectif*/
 }
@@ -110,7 +145,7 @@ section > div{
     
 }
 .contact-flex p:first-child{
-    flex: 0 0 40%;
+    flex: 0 0 20%;
 }
 
 /*margin left pour informations de contacts*/
@@ -223,14 +258,6 @@ color:gold ;
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    box-shadow: 0px 0px 15px #555;
-}
-
-
-
-.conteneurlang{
-    flex: 0 0 60%;
-    border-radius: 5px;
-    background-color: lightcoral;
-    border-bottom: 1px ridge grey;
+    box-shadow: 3px 1px 5px rgb(45, 44, 46);
+    padding: 0%;
 }

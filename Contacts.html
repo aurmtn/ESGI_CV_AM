@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Import materialize.css-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <link rel="stylesheet" href="./contacts.css">
+    <title>Contacts</title>
+</head>
+<header>
+    <nav>
+        <div class="nav-wrapper">
+            <a href="#" class="brand-logo center ">Contacts</a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li><a target="blank" href="http://127.0.0.1:5500/CV.html">Accueil</a></li>
+                <li><a target="blank" href="badges.html">Remerciements</a></li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <div class="container">
+        <h4 class="flow-text">Pour toutes prises de contacts, veuillez remplir le formulaire ci-dessous.</h4>
+        <form class="col s12">
+            <div class="row">
+                <div class="input-field col s6">
+                    <input placeholder="Prénom" id="first_name" type="text" class="validate">
+                </div>
+                <div class="input-field col s6">
+                    <input id="last_name" placeholder="Nom" type="text" class="validate">
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input placeholder="E-mail " class="active" id="email" type="email" class="validate">
+                </div>
+            </div>
+            <div class="row">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <textarea placeholder="Votre Message" id="textarea1" class="materialize-textarea"></textarea>
+                    </div>
+                    <button class="btn waves-effect  waves-light" style="background-color:rgb(252, 87, 87);"
+                        type="submit" name="action">Envoyer
+                        <i class="material-icons right ">mail</i>
+                    </button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://www.letudiant.fr/opespe/esgi/images/titre.jpg">
+                        <span class="card-title">ESGI AIX</span>
+                    </div>
+                    <div class="card-content">
+                        <p>L'ESGI est l'école qui m'a appris à utiliser de la meilleure manière les outils informatiques
+                            et les systèmes d'informations. Pour plus d'informations à mon sujet je vous laisse les
+                            contacter.</p>
+                    </div>
+                    <div class="card-action">
+                        <a target="blank" href="https://www.esgi.fr/ecole-informatique/contact-esgi.html">Les
+                            contacter</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col s12 m6">
+                <div class="card">
+                    <div class="card-image">
+                        <img src="https://www.moovijob.com/registration/company/cesi-ecole-de-l-alternance-2/logo/cesi_logo.jpg">
+                    </div>
+                    <div class="card-content">
+                        <p>Le CESI m'a permis de trouver en l'informatique ma voie professionelle. C'est le centre de formation qui m'a conforté dans mon choix.</p>
+                    </div>
+                     <div class="card-action">
+                        <a target="blank" href="https://contact.cesi.fr">Les
+                            contacter</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+
+        <!-- JavaScript at end of body for optimized loading -->
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script type="text/javascript" src="js/materialize.min.js"></script>
+
+
+</body>
+
+
+
+
+<footer id="myContainer" class="page-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col l6 s12">
+                <h5 class="white-text">Mes réseaux</h5>
+                <a class="waves-effect waves-light social-icon btn linkedin black" href="https://www.linkedin.com/in/aurélien-montanari-847747160/" target="blank">
+                <i class="fa fa-linkedin"></i></a>
+                <a class="waves-effect waves-light social-icon btn  black" href="https://www.linkedin.com/in/aurélien-montanari-847747160/" target="blank">
+                <i class="fa fa-github"></i></a>
+
+            </div>
+            <div class="col l4 offset-l2 s12">
+                <h5 class="white-text">Navigation</h5>
+                <ul>
+                    <li><a class="grey-text text-lighten-3" href="./CV.html" target="blank">Page pricipale</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            © 2020 ESGI
+        </div>
+    </div>
+</footer>
+
+</html>
