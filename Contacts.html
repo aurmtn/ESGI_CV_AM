@@ -1,3 +1,25 @@
+<!-- DISCLAIMER !!!! J'avais changer l'extension de cette page en php pour mes tests de formulaires et je l'ai ensuite repasser en html car plusieurs échecs DISCLAIMER !!!! -->
+
+<!-- <?php
+        //Déclaration des variables
+        $sent = false;
+        if ($_POST) {
+            if ($_POST["last_name"] and $_POST["first_name"] and $_POST["email"] and $_POST["content"]) {
+
+                $first_name = $_POST['first_name'];
+                $last_name = $_POST['last_name'];
+                $email = $_POST['email'];
+                $content = $_POST['content'];
+                // Envoie du mail //
+                $to_email = 'nazz.tazz13@gmail.com';
+                $subject = 'Contact de ' + $first_name + " " + $last_name;
+                $message = $content;
+                $headers = 'From: ' + $email;
+
+                $sent = mail($to_email, $subject, $message, $headers);
+            }
+        }
+        ?> -->
 <!DOCTYPE html>
 <html>
 
@@ -14,8 +36,9 @@
         <div class="nav-wrapper">
             <a href="#" class="brand-logo center ">Contacts</a>
             <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a target="blank" href="http://127.0.0.1:5500/CV.html">Accueil</a></li>
-                <li><a target="blank" href="badges.html">Remerciements</a></li>
+                <li><a target="blank" href="CV.html">Accueil</a></li>
+                <!-- page de remerciements/a propos à faire, idées de mise en page à chercher -->
+                <!-- <li><a target="blank" href="badges.html">Remerciements</a></li>  -->
             </ul>
         </div>
     </nav>
@@ -27,21 +50,22 @@
         <form class="col s12">
             <div class="row">
                 <div class="input-field col s6">
-                    <input placeholder="Prénom" id="first_name" type="text" class="validate">
+                    <input name="first_name" placeholder="Prénom" id="first_name" type="text" class="validate">
                 </div>
                 <div class="input-field col s6">
-                    <input id="last_name" placeholder="Nom" type="text" class="validate">
+                    <input name="last_name" id="last_name" placeholder="Nom" type="text" class="validate">
                 </div>
             </div>
             <div class="row">
                 <div class="input-field col s12">
-                    <input placeholder="E-mail " class="active" id="email" type="email" class="validate">
+                    <input name="email" placeholder="E-mail " class="active" id="email" type="email" class="validate">
                 </div>
             </div>
             <div class="row">
                 <div class="row">
                     <div class="input-field col s12">
-                        <textarea placeholder="Votre Message" id="textarea1" class="materialize-textarea"></textarea>
+                        <textarea name="content" placeholder="Votre Message" id="textarea1"
+                            class="materialize-textarea"></textarea>
                     </div>
                     <button class="btn waves-effect  waves-light" style="background-color:rgb(252, 87, 87);"
                         type="submit" name="action">Envoyer
@@ -51,7 +75,15 @@
             </div>
 
         </form>
+        <!-- <?php
+                if ($sent) {
+                    echo "Le formulaire à bien été envoyé au BG du site";
+                } else {
+                    echo "Une erreur est survenue";
+                }
+                ?> -->
     </div>
+
     <div class="container">
         <div class="row">
             <div class="col s12 m6">
@@ -60,11 +92,13 @@
                         <img src="https://www.letudiant.fr/opespe/esgi/images/titre.jpg">
                         <span class="card-title">ESGI AIX</span>
                     </div>
+
                     <div class="card-content">
                         <p>L'ESGI est l'école qui m'a appris à utiliser de la meilleure manière les outils informatiques
                             et les systèmes d'informations. Pour plus d'informations à mon sujet je vous laisse les
                             contacter.</p>
                     </div>
+
                     <div class="card-action">
                         <a target="blank" href="https://www.esgi.fr/ecole-informatique/contact-esgi.html">Les
                             contacter</a>
@@ -76,42 +110,37 @@
             <div class="col s12 m6">
                 <div class="card">
                     <div class="card-image">
-                        <img src="https://www.moovijob.com/registration/company/cesi-ecole-de-l-alternance-2/logo/cesi_logo.jpg">
+                        <img
+                            src="https://www.moovijob.com/registration/company/cesi-ecole-de-l-alternance-2/logo/cesi_logo.jpg">
                     </div>
                     <div class="card-content">
-                        <p>Le CESI m'a permis de trouver en l'informatique ma voie professionelle. C'est le centre de formation qui m'a conforté dans mon choix.</p>
+                        <p>Le CESI m'a permis de trouver en l'informatique ma voie professionelle. C'est le centre de
+                            formation qui m'a conforté dans mon choix.</p>
                     </div>
-                     <div class="card-action">
+                    <div class="card-action">
                         <a target="blank" href="https://contact.cesi.fr">Les
                             contacter</a>
+                    </div>
                 </div>
-            </div>
 
+            </div>
         </div>
     </div>
-    </div>
-
-
-
-        <!-- JavaScript at end of body for optimized loading -->
-        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-        <script type="text/javascript" src="js/materialize.min.js"></script>
-
-
+    <!-- JavaScript at end of body for optimized loading -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
 </body>
-
-
-
-
 <footer id="myContainer" class="page-footer">
     <div class="container">
         <div class="row">
             <div class="col l6 s12">
                 <h5 class="white-text">Mes réseaux</h5>
-                <a class="waves-effect waves-light social-icon btn linkedin black" href="https://www.linkedin.com/in/aurélien-montanari-847747160/" target="blank">
-                <i class="fa fa-linkedin"></i></a>
-                <a class="waves-effect waves-light social-icon btn  black" href="https://www.linkedin.com/in/aurélien-montanari-847747160/" target="blank">
-                <i class="fa fa-github"></i></a>
+                <a class="waves-effect waves-light social-icon btn linkedin black"
+                    href="https://www.linkedin.com/in/aurélien-montanari-847747160/" target="blank">
+                    <i class="fa fa-linkedin"></i></a>
+                <a class="waves-effect waves-light social-icon btn  black"
+                    href="https://www.linkedin.com/in/aurélien-montanari-847747160/" target="blank">
+                    <i class="fa fa-github"></i></a>
 
             </div>
             <div class="col l4 offset-l2 s12">
@@ -124,7 +153,7 @@
     </div>
     <div class="footer-copyright">
         <div class="container">
-            © 2020 ESGI
+            © 2020 ESGI 
         </div>
     </div>
 </footer>
